@@ -1,0 +1,74 @@
+.App {
+  display: flex;
+  flex-direction: column; /* Agregado */
+  align-items: center; /* Agregado */
+  width: 100vw;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #000000;
+  font-weight: lighter;
+}
+
+.label[for="year"] {
+  color: #000000;
+}
+
+.chart-container {
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Añadido */
+  padding: 1em; /* Añadido */
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.chart-wrapper {
+  position: relative;
+}
+
+.chart-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-overlay span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes chart-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.chart-animation {
+  animation: chart-fade-in 1s ease-in-out;
+}
